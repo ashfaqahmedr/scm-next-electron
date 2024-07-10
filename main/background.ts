@@ -24,9 +24,10 @@ if (isProd) {
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
+    show: false,
   })
-
-  bindHandlers()
+  
+  bindHandlers(mainWindow)
 
 
   if (isProd) {
